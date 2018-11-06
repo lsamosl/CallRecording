@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallRecording", "CallRecording\CallRecording.csproj", "{4F279CFC-5150-4ED1-A15F-44E3570C69F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallRecording.Data", "CallRecording.Data\CallRecording.Data.csproj", "{5B8CFDE1-ED82-493F-B18A-840E9F90FFAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallRecording.DAL", "CallRecording.DAL\CallRecording.DAL.csproj", "{E8C0216A-4004-464C-BAC7-4834A6C18D18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4F279CFC-5150-4ED1-A15F-44E3570C69F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F279CFC-5150-4ED1-A15F-44E3570C69F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F279CFC-5150-4ED1-A15F-44E3570C69F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8CFDE1-ED82-493F-B18A-840E9F90FFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8CFDE1-ED82-493F-B18A-840E9F90FFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8CFDE1-ED82-493F-B18A-840E9F90FFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8CFDE1-ED82-493F-B18A-840E9F90FFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C0216A-4004-464C-BAC7-4834A6C18D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C0216A-4004-464C-BAC7-4834A6C18D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C0216A-4004-464C-BAC7-4834A6C18D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C0216A-4004-464C-BAC7-4834A6C18D18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a6d587d2044c44dabfe812f89f5a2a81" Name="Diagram1">
+        <EntityTypeShape EntityType="CallRecordingModel.CallType" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CallRecordingModel.Event" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CallRecordingModel.EventType" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CallRecordingModel.NumberType" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CallRecordingModel.Role" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="CallRecordingModel.FK__Event__CallTypeI__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="CallRecordingModel.FK__Event__EventType__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="CallRecordingModel.FK__Event__NumberTyp__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="CallRecordingModel.FK__Event__RoleId__412EB0B6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

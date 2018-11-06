@@ -84,13 +84,6 @@
         <label for="ddlRole" class="col-sm-2 col-form-label">Role</label>
         <div class="col-sm-10">
             <asp:DropDownList ID="ddlRole" runat="server" CssClass="form-control">
-                <asp:ListItem Value="0">Select a Role</asp:ListItem>
-                <asp:ListItem Value="1">Named Insured</asp:ListItem>
-                <asp:ListItem Value="2">DIV</asp:ListItem>
-                <asp:ListItem Value="3">DCV</asp:ListItem>
-                <asp:ListItem Value="4">Witness</asp:ListItem>
-                <asp:ListItem Value="5">Agent</asp:ListItem>
-                <asp:ListItem Value="6">Other</asp:ListItem>
             </asp:DropDownList>
             <asp:CustomValidator ID="CustomValidator2" 
                 runat="server" 
@@ -132,9 +125,10 @@
         if (typeof (Page_ClientValidate) == 'function')
             isValid = Page_ClientValidate();
 
-        if (!isValid)
+        changeBorderColor();
+        if (!isValid) {
             return;
-
+        }
         else {
             $.ajax({
                 type: "POST",
@@ -211,6 +205,20 @@
             args.IsValid = true
 
         return args.IsValid;
+    }
+
+    function changeBorderColor() {
+        console.log(Page_Validators);
+        for (var i in Page_Validators) {
+            try {
+                var control = document.getElementById(Page_Validators[i].controltovalidate);
+                if (!Page_Validators[i].isvalid) {
+                    control.style.border = '1px solid red';
+                } else {
+                    control.style.border = '';
+                }
+            } catch (e) { }
+        }
     }
 </script>
 
